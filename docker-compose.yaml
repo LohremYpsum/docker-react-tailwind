@@ -1,0 +1,14 @@
+version: "3.8"
+services: 
+  
+  ## react-service 
+  my-app: 
+    build: ./react-tailwind  
+    container_name: react-tailwind-project_container
+    ## (if running several Docker-Projects, change Portmappings to unused Ports)
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+
+  ## Add additional Services you might need here     
